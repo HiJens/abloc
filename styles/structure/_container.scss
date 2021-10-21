@@ -1,0 +1,26 @@
+.container {
+
+    @media (max-width: $viewport--xs - 1) {
+        max-width: $container--xs;
+    }
+
+    @media (min-width: $viewport--xs) and (max-width: $viewport--sm - 1) {
+        max-width: $container--sm;
+    }
+
+    @media (min-width: $viewport--sm) and (max-width: $viewport - 1) {
+        max-width: $container;
+    }
+
+    @media (min-width: $viewport) and (max-width: $viewport--lg - 1) {
+        max-width: $container--lg;
+    }
+
+    @media (min-width: $viewport--lg) and (max-width: $viewport--xl - 1) {
+        max-width: $container--xl;
+    }
+
+    @media (min-width: $viewport--xl) {
+        max-width: $container--xxl;
+    }
+}
