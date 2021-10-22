@@ -1,5 +1,7 @@
 .container {
-
+    margin-right: auto;
+    margin-left: auto;
+    
     @media (max-width: $viewport--xs - 1) {
         max-width: $container--xs;
     }

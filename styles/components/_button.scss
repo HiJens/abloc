@@ -1,0 +1,16 @@
+.button {
+    padding: $spacing-unit / 2 $spacing-unit * .85;
+    border-radius: $spacing-unit;
+
+    &--blue {
+        background-color: $primary-color;
+        color: $white;
+        transition: .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        &:hover,
+        &:active,
+        &:focus {
+            transform: scale(1.05);
+        }
+    }
+}

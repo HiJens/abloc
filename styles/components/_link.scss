@@ -1,0 +1,33 @@
+.link {
+    font-size: $font-size;
+
+    &--nav {
+        font-weight: 500;
+        position: relative;
+
+        @media (max-width: $viewport--lg) {
+            font-size: $h2-size;
+            margin-bottom: $spacing-unit;
+        }
+
+        &::after {
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: $primary-color;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
