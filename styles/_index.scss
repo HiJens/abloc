@@ -9,6 +9,7 @@
 @import './structure/container';
 @import './structure/headings';
 @import './structure/text';
+@import './structure/section';
 
 // Components
 @import './components/link';
@@ -17,4 +18,5 @@
 // Partials
 @import './partials/header';
 @import './partials/hero';
+@import './partials/about';
 @import './partials/footer';

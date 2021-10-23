@@ -1,0 +1,11 @@
+.section {
+    margin: 100px 0;
+
+    &-content {
+        padding: 0 $spacing-unit * 2;
+
+        @media (max-width: $viewport--xl - 1) {
+            padding: 0;
+        }
+    }
+}

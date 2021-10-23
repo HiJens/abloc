@@ -1,0 +1,48 @@
+.about {
+    @media (min-width: $viewport--xl - 1) {
+        margin-bottom: 100px + $spacing-unit * 2;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    &-image {
+        position: relative;
+        height: 550px;
+
+        @media (max-width: $viewport--xl - 1) {
+            height: 400px;
+        }
+
+        img {
+            object-position: center -450px;
+
+            @media (max-width: $viewport--xl - 1) {
+                object-position: center center;
+            }
+        }
+    }   
+
+    &-content {
+        background-color: $light-grey;
+        padding: $spacing-unit;
+        position: absolute;
+        bottom: -$spacing-unit * 2;
+        right: $spacing-unit;
+        max-width: 400px;
+        transition: ease-in-out .3s;
+
+        @media (max-width: $viewport--xl - 1) {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            max-width: none;
+        }
+
+        .button {
+            display: inline-flex;
+            margin-top: $spacing-unit;
+        }
+    }
+}

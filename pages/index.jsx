@@ -5,7 +5,7 @@ import Head from "next/head";
 import { BaseLayout } from "../layouts";
 
 // Partials
-import { Hero } from "../partials";
+import { About, Hero } from "../partials";
 
 // Components
 import { Arrow, Facebook, Linkedin, Instagram } from "../components";
@@ -46,6 +46,19 @@ const Home = () => {
             icon: Linkedin,
           },
         ]}
+      />
+      <About 
+        img="/assets/images/about.jpeg"
+        title="All about <span>evolution</span>"
+        content={{
+          title: "Why A'Bloc?",
+          text: "Opzoek naar de perfecte balans tussen lichaam en geest? Vanuit mijn kennis en ervaring in duurzame gedragsverandering en wielrennen breng ik deze twee werelden samen om optimaal te presteren op en naast de fiets of het bureau.",
+          button: {
+            title: "Bekijk meer",
+            href: "#diensten",
+            icon: Arrow
+          }
+        }}
       />
     </BaseLayout>
   );
