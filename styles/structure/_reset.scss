@@ -21,9 +21,14 @@ main {
 
 main {
     min-height: 100vh;
+    padding-top: $spacing-unit * 6;
 }
 
 a {
     text-decoration: none;
     color: $black;
+}
+
+p {
+    margin: 0;
 }

@@ -5,3 +5,5 @@ export {
     NavLink,
     Button
 };
+
+export * from "./icons";

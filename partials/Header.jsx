@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // React
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Components
 import { Button, NavLink } from "../components";
@@ -14,6 +14,7 @@ import * as Routes from "../routes";
 const Header = () => {
     // States
     const [ menu, setMenu ] = useState(false);
+    const [ scrolled, setScrolled ] = useState(false);
 
     const NavItems = [
         {
@@ -42,8 +43,15 @@ const Header = () => {
         setMenu(!menu);
     };
 
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            const scroll = window.top.scrollY; 
+            setScrolled(scroll >= 75);
+        });
+    }, []);
+
     return (
-        <header className="header">
+        <header className={`header${scrolled ? ' header--scrolled' : ''}`}>
             <div className="container">
                 <div className="header-nav">
                     <Link href={Routes.HOME}>

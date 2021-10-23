@@ -1,0 +1,113 @@
+.hero {
+
+    &--main {
+        
+        .hero {
+
+            &-content {
+                background-color: $light-grey;
+                padding: $spacing-unit * 3 80px;
+                position: relative;
+
+                @media (max-width: $viewport - 1) {
+                    padding: 10px 20px;
+                }
+
+                @media (max-width: $viewport--xl - 1) {
+                    padding-bottom: 0;
+                }
+            }
+
+            &-context {
+                max-width: 600px;
+
+                @media (min-width: $viewport--xl) and (max-width: $viewport--xxl - 1) {
+                    max-width: 450px;
+                }
+            }
+
+            &-title {
+
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            &-text {
+                line-height: 22px;
+                font-size: 18px;
+            }
+
+            &-buttons {
+                margin-top: $spacing-unit * 1.5;
+                display: flex;
+
+                @media (max-width: $viewport - 1) {
+                    flex-direction: column;
+
+                    .button {
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .button {
+                    margin-right: 20px;
+                }
+            }
+
+            &-image {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    max-width: 600px;
+                    position: absolute;
+                    bottom: 0;
+                    right: $spacing-unit;
+
+                    @media (max-width: $viewport - 1) {
+                        max-width: 300px;
+                    }
+
+                    @media (max-width: $viewport--xl - 1) {
+                        position: static;
+                    }
+
+                    @media (min-width: $viewport--xl) and (max-width: $viewport--xxl - 1) {
+                        max-width: 580px;
+                    }
+                }
+            }
+
+            &-scroll {
+                width: 25px;
+                height: 40px;
+                border: 2px solid $black;
+                border-radius: 30px;
+                position: absolute;
+                right: 15px;
+                bottom: 15px;
+
+                &-dot {
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background-color: $primary-color;
+                    border-radius: 100%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 3px;
+                    margin: auto;
+                    animation: ttb 1s infinite;
+
+                    @keyframes ttb {
+                        0% {top: 3px}
+                        50% {top: 17px;}
+                        100% {top: 3px;}
+                    }
+                }
+            }
+        }
+    }
+}
