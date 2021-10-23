@@ -8,7 +8,7 @@ import { BaseLayout } from "../layouts";
 import { Hero } from "../partials";
 
 // Components
-import { Arrow } from "../components";
+import { Arrow, Facebook, Linkedin, Instagram } from "../components";
 
 const Home = () => {
   return (
@@ -32,6 +32,20 @@ const Home = () => {
         ]}
         img="/assets/images/cutout.png"
         hasScrollDown={true}
+        socials={[
+          {
+            href: "https://www.facebook.com/abloccoaching",
+            icon: Facebook,
+          },
+          {
+            href: "https://www.instagram.com/abloccoaching/",
+            icon: Instagram,
+          },
+          {
+            href: "https://www.linkedin.com/in/arnaud-deleu-a51b46182/",
+            icon: Linkedin,
+          },
+        ]}
       />
     </BaseLayout>
   );

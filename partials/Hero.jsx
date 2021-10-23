@@ -1,7 +1,7 @@
 import HtmlParser from "react-html-parser";
 
 // Next.js
-import Image from "next/image";
+import Link from "next/link";
 
 // Components
 import { Button } from "../components";
@@ -61,6 +61,24 @@ const Hero = ({ title, text, buttons, img, hasScrollDown, socials, isMain }) => 
                         )
                     }
                 </div>
+
+                {
+                    socials && (
+                        <div className="hero-socials">
+                            {
+                                socials.map((social, index) => {
+                                    return (
+                                        <Link key={index} href={social.href} passHref>
+                                            <a className="hero-socials-item" target="_blank">
+                                                {social.icon()}
+                                            </a>
+                                        </Link>
+                                    )
+                                })
+                            }
+                        </div>
+                    )
+                }
             </div>
         </section>
     )

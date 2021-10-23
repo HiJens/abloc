@@ -1,0 +1,79 @@
+.footer {
+    padding: $spacing-unit 0;
+    color: $white;
+    font-weight: 400;
+
+    &-content {
+        background-color: $primary-color;
+        padding: $spacing-unit $spacing-unit * 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $viewport--xl - 1) {
+            flex-direction: column;
+        }
+    }
+
+    &-creator {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $viewport--xl - 1) {
+            margin-top: $spacing-unit;
+        }
+
+        svg {
+            margin-left: $spacing-unit / 2;
+
+            path {
+
+                &:nth-of-type(2) {
+                    fill: $primary-color;
+                    transition: ease-in-out .3s;
+                }
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+
+                path {
+
+                    &:nth-of-type(2) {
+                        fill: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $viewport--xl - 1) {
+            margin-top: $spacing-unit;
+            flex-direction: column;
+
+            a {
+                margin: $spacing-unit / 3 0 !important;
+            }
+        }
+
+        a {
+            color: $white;
+            text-decoration: underline;
+            font-weight: 400;
+            margin: 0 $spacing-unit / 2;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}

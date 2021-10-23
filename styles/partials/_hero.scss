@@ -108,6 +108,30 @@
                     }
                 }
             }
+
+            &-socials {
+                display: flex;
+                align-items: center;
+                margin-top: $spacing-unit / 2;
+
+                svg {
+                    margin-right: $spacing-unit / 4;
+
+                    path {
+                        stroke: $grey;
+                        transition: ease-in-out .2s;
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        
+                        path {
+                            stroke: $primary-color;
+                        }
+                    }
+                }
+            }
         }
     }
 }

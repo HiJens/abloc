@@ -1,5 +1,5 @@
 // Partials
-import { Header } from "../partials";
+import { Footer, Header } from "../partials";
 
 const BaseLayout = ({ children }) => {
     return (
@@ -10,6 +10,10 @@ const BaseLayout = ({ children }) => {
             <main className="main">
                 {children}
             </main>
+
+            <Footer
+                name="A'Bloc Coaching"
+            />
         </div>
     );
 };
