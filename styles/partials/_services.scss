@@ -1,0 +1,63 @@
+.services {
+
+    .section-content {
+        background-color: $light-grey;
+    }
+
+    &-wrapper {
+        margin-top: $spacing-unit * 2;
+    }
+
+    .swiper-slide {
+        height: auto;
+    }
+
+    &-item {
+        background-color: $white;
+        padding: $spacing-unit;
+        height: 100%;
+        transition: ease-in-out .3s;
+
+        @media (max-width: $viewport - 1) {
+            padding-bottom: $spacing-unit * 2;
+        }
+
+        svg {
+            width: 35px;
+            height: 35px;
+
+            path {
+                stroke: $grey;
+            }
+        }
+
+        &-title {
+            color: $primary-color;
+        }
+
+        &-wrapper {
+            height: 100%;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $primary-color;
+
+            svg {
+                
+                path {
+                    stroke: $white;
+                }
+            }
+
+            .services-item-title {
+                color: $white;
+            }
+
+            .services-item-text {
+                color: $white;
+            }
+        }
+    }
+}

@@ -5,10 +5,10 @@ import Head from "next/head";
 import { BaseLayout } from "../layouts";
 
 // Partials
-import { About, Hero } from "../partials";
+import { About, Hero, Services } from "../partials";
 
 // Components
-import { Arrow, Facebook, Linkedin, Instagram } from "../components";
+import { Arrow, Facebook, Linkedin, Instagram, Cycling, Running, OneOnOne, Corporate } from "../components";
 
 const Home = () => {
   return (
@@ -47,6 +47,7 @@ const Home = () => {
           },
         ]}
       />
+
       <About 
         img="/assets/images/about.jpeg"
         title="All about <span>evolution</span>"
@@ -59,6 +60,33 @@ const Home = () => {
             icon: Arrow
           }
         }}
+      />
+
+      <Services 
+        title="Get to know <span>the services</span>"
+        text="Ontdek het hier"
+        services={[
+          {
+            icon: Cycling,
+            title: "Wielrennen",
+            text: "Ben je opzoek naar net dat tikkeltje extra, die het verschil tussen winnen en verliezen kan maken. Dan ben je bij A’bloc coaching aan het juiste adres want naast het fysieke aspect is het mentale aspect van een even groot belang."
+          },
+          {
+            icon: Running,
+            title: "Lopen",
+            text: "Lukt het jou niet om gestructureerd jouw trainingen in te plannen of weet je gewoon weg niet waar te beginnen, dan help ik jou graag verder met het halen van jou doel."
+          },
+          {
+            icon: OneOnOne,
+            title: "1 op 1 coaching",
+            text: "Denk je nou het fysieke vind ik minder belangrijk, maar heb je nood aan een goed gesprek voor, of na uw wedstrijd dan kan je bij mij ook steeds terecht voor mentale begeleiding en coaching."
+          },
+          {
+            icon: Corporate,
+            title: "Corporate wellbeing",
+            text: "Ben je met je bedrijf of organisatie opzoek naar die goede sfeer op het werk of wil je net dat tikkeltje extra naambekendheid van een gezond bedrijf dan zoeken wij samen naar de oplossing om je organisatie duurzaam te veranderen met gezonde omzetcijfers. Alles verloopt in een nauwe samenwerking met jullie als organisatie."
+          }
+        ]}
       />
     </BaseLayout>
   );

@@ -14,7 +14,7 @@ const Hero = ({ title, text, buttons, img, hasScrollDown, socials, isMain }) => 
                     <div className="hero-context">
                         {
                             title && (
-                                <h1 className="hero-title">
+                                <h1 className="hero-title" data-aos="fade-right">
                                     {HtmlParser(title)}
                                 </h1>
                             )
@@ -22,13 +22,13 @@ const Hero = ({ title, text, buttons, img, hasScrollDown, socials, isMain }) => 
 
                         {
                             text && (
-                                <p className="hero-text">
+                                <p className="hero-text" data-aos="fade-right" data-aos-delay="200">
                                     {text}
                                 </p>
                             )
                         }
 
-                        <div className="hero-buttons">
+                        <div className="hero-buttons" data-aos="fade-right" data-aos-delay="400">
                             {
                                 buttons && buttons.map((btn, index) => {
                                     return (
@@ -48,7 +48,7 @@ const Hero = ({ title, text, buttons, img, hasScrollDown, socials, isMain }) => 
                     <div className="hero-image">
                         {
                             img && (
-                                <img src={img} alt="hero" />
+                                <img src={img} alt="hero" data-aos="fade-up" />
                             )
                         }
                     </div>
@@ -69,7 +69,7 @@ const Hero = ({ title, text, buttons, img, hasScrollDown, socials, isMain }) => 
                                 socials.map((social, index) => {
                                     return (
                                         <Link key={index} href={social.href} passHref>
-                                            <a className="hero-socials-item" target="_blank">
+                                            <a className="hero-socials-item" target="_blank" data-aos="fade-up" data-aos-delay={100 * index}>
                                                 {social.icon()}
                                             </a>
                                         </Link>
