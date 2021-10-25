@@ -1,0 +1,30 @@
+.formules {
+
+    &-item {
+        background-color: $light-grey;
+        padding: $spacing-unit;
+        margin-bottom: $spacing-unit;
+
+        &-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 20px;
+        }
+
+        &-price {
+
+            h3 {
+                font-size: 35px;
+                color: $primary-color;
+                margin: 0;
+            }
+
+            span {
+                color: $light-black;
+                font-size: 12px;
+            }
+        }
+    }
+}

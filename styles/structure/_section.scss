@@ -16,5 +16,28 @@
                 padding: $spacing-unit $spacing-unit;
             }
         }
+
+        &--withGrid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    &-side {
+
+        &--lg {
+            max-width: 560px;
+            width: 100%;
+        }
+
+        &--sm {
+            max-width: 450px;
+            width: 100%;
+
+            @media (max-width: $viewport - 1) {
+                margin-top: $spacing-unit;
+            }
+        }
     }
 }
