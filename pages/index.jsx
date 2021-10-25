@@ -5,7 +5,7 @@ import Head from "next/head";
 import { BaseLayout } from "../layouts";
 
 // Partials
-import { About, Formules, Hero, Services } from "../partials";
+import { About, Cases, Formules, Hero, Services } from "../partials";
 
 // Components
 import { Arrow, Facebook, Linkedin, Instagram, Cycling, Running, OneOnOne, Corporate } from "../components";
@@ -108,6 +108,26 @@ const Home = () => {
             showPrice: false,
           }
         ]}
+      />
+
+      <Cases 
+          title="Some <span>references</span>"
+          references={[
+            {
+              name: "Arnaud Deleu",
+              avatar: "/assets/images/about.jpeg",
+              function: "Renner bij Asfra",
+              title: "Geweldig",
+              text: "Wat tekst"
+            },
+            {
+              name: "Arnaud Deleu",
+              avatar: "/assets/images/about.jpeg",
+              function: "Renner bij Asfra",
+              title: "Geweldig",
+              text: "Wat tekst"
+            },
+          ]}
       />
     </BaseLayout>
   );

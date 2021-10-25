@@ -5,13 +5,13 @@ import { Button, Arrow } from "../components";
 
 const Formules = ({ title, text, formules }) => {
     return (
-        <section className="section section--formules formules">
+        <section className="section section--formules formules" id="formules">
             <div className="container">
                 <div className="section-content section-content--withGrid">
                     <div className="section-side section-side--lg">
                         {
                             title && (
-                                <h2 className="formules-title">
+                                <h2 className="formules-title" data-aos="fade-right">
                                     {HtmlParser(title)}
                                 </h2>
                             )
@@ -19,7 +19,7 @@ const Formules = ({ title, text, formules }) => {
 
                         {
                             text && (
-                                <p className="formules-text">
+                                <p className="formules-text" data-aos="fade-right" data-aos-delay={100}>
                                     {text}
                                 </p>
                             )
@@ -30,7 +30,7 @@ const Formules = ({ title, text, formules }) => {
                         {
                             formules && formules.map((formule, index) => {
                                 return (
-                                    <div className="formules-item" key={index}>
+                                    <div className="formules-item" key={index} data-aos="fade-down">
                                         <h3 className="formules-item-title">{formule.title}</h3>
 
                                         <hr />

@@ -34,3 +34,11 @@ h3 {
         font-size: $h4-size;
     }
 }
+
+h5 {
+    font-size: $h5-size;
+
+    @media (max-width: $viewport - 1) {
+        font-size: $h6-size;
+    }
+}
