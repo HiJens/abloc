@@ -1,0 +1,62 @@
+.contact {
+
+    .container {
+        position: relative;
+    }
+
+    &-content {
+        display: flex;
+        background-color: $light-grey;
+    }
+
+    &-info {
+        max-width: 600px;
+    }
+
+    &-data {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-unit / 2;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &-img {
+        position: absolute;
+        height: 100%;
+        max-width: 420px;
+        width: 100%;
+        top: 0;
+        right: 0;
+
+        @media (max-width: $viewport--lg - 1) {
+            display: none;
+        }
+    }
+
+    &-socials {
+        display: flex;
+        align-items: center;
+        margin-top: $spacing-unit * 4;
+
+        svg {
+            margin-right: $spacing-unit / 4;
+
+            path {
+                stroke: $primary-color;
+                transition: ease-in-out .2s;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                
+                path {
+                    stroke: $grey;
+                }
+            }
+        }
+    }
+}

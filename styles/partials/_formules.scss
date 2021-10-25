@@ -11,6 +11,15 @@
             align-items: center;
             flex-wrap: wrap;
             padding-top: 20px;
+
+            @media (max-width: $viewport--lg - 1) {
+                flex-direction: column;
+                align-items: flex-start;
+
+                .button {
+                    margin-top: $spacing-unit / 2;
+                }
+            }
         }
 
         &-price {

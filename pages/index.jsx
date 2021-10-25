@@ -5,7 +5,7 @@ import Head from "next/head";
 import { BaseLayout } from "../layouts";
 
 // Partials
-import { About, Cases, Formules, Hero, Services } from "../partials";
+import { About, Cases, Contact, Formules, Hero, Services } from "../partials";
 
 // Components
 import { Arrow, Facebook, Linkedin, Instagram, Cycling, Running, OneOnOne, Corporate } from "../components";
@@ -128,6 +128,24 @@ const Home = () => {
               text: "Wat tekst"
             },
           ]}
+      />
+
+      <Contact 
+        title="<span>Contact me</span> right away"
+        socials={[
+          {
+            href: "https://www.facebook.com/abloccoaching",
+            icon: Facebook,
+          },
+          {
+            href: "https://www.instagram.com/abloccoaching/",
+            icon: Instagram,
+          },
+          {
+            href: "https://www.linkedin.com/in/arnaud-deleu-a51b46182/",
+            icon: Linkedin,
+          },
+        ]}      
       />
     </BaseLayout>
   );
