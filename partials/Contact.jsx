@@ -10,16 +10,16 @@ const Contact = ({ title, socials }) => {
             <div className="container">
                 <div className="section-content section-content--withBg contact-content">
                     <div className="contact-info">
-                        <h2 className="contact-title">
+                        <h2 className="contact-title" data-aos="fade-right">
                             {HtmlParser(title)}
                         </h2>
 
-                        <div className="contact-data">
+                        <div className="contact-data" data-aos="fade-right" data-aos-delay={100}>
                             <span>Bel mij op via</span>
                             <a href="tel:0477274789">0477 27 36 97</a>
                         </div>
 
-                        <div className="contact-data">
+                        <div className="contact-data" data-aos="fade-right" data-aos-delay={200}>
                             <span>Of mail mij via</span>
                             <a href="mailto:test@gmail.com">info@gmail.com</a>
                         </div>
@@ -44,7 +44,7 @@ const Contact = ({ title, socials }) => {
                     </div>
                 </div>
 
-                <div className="contact-img">
+                <div className="contact-img" data-aos="fade-up">
                     <Image
                         src="/assets/images/contact.jpeg"
                         objectFit="cover"

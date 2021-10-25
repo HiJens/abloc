@@ -42,8 +42,8 @@ const Services = ({ title, text, services }) => {
                             {
                                 services && services.map((service, index) => {
                                     return (
-                                        <SwiperSlide>
-                                            <div className="services-item-wrapper" data-aos="fade-up" data-aos-delay={100 * index} key={index}>
+                                        <SwiperSlide key={index}>
+                                            <div className="services-item-wrapper" data-aos="fade-up" data-aos-delay={100 * index}>
                                                 <div className="services-item">
                                                     {service.icon()}
 
