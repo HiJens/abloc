@@ -95,11 +95,13 @@ const Home = () => {
         formules={[
           {
             title: "Voor beginner",
+            text: "Physical coaching",
             showPrice: true,
             price: "€ 80,00"
           },
           {
             title: "Voor experts",
+            text: "Mental & physical coaching",
             showPrice: true,
             price: "€ 140,00"
           },
@@ -114,18 +116,18 @@ const Home = () => {
           title="Some <span>references</span>"
           references={[
             {
-              name: "Arnaud Deleu",
-              avatar: "/assets/images/about.jpeg",
-              function: "Renner bij Asfra",
-              title: "Geweldig",
-              text: "Wat tekst"
+              name: "Sven Steyaert",
+              avatar: "/assets/images/sven.jpeg",
+              function: "Klant bij A'Bloc",
+              title: "Niet twijfelen, doen!",
+              text: "Ik heb altijd geworsteld met structuur in mijn trainingen. De wil was er wel, maar de motivatie niet altijd. Te koud, te nat, geen zin…Arnaud werkt een haalbaar maar uitdagend weekschema uit, waarin per dag vermeld wordt wat het doel van de training is en waar je moet op letten. Als het in mijn agenda staat, heb ik geen excuus om niet te trainen… En het werkt! Ik sport nu ongeveer 8 à 12 uur per week, basisconditie is enorm verbeterd, mijn weerstand is verhoogd en ik voel me goed in mijn vel. Niet twijfelen, doen!"
             },
             {
-              name: "Arnaud Deleu",
-              avatar: "/assets/images/about.jpeg",
-              function: "Renner bij Asfra",
-              title: "Geweldig",
-              text: "Wat tekst"
+              name: "Nourdine Ranson",
+              avatar: "/assets/images/nourdine.jpeg",
+              function: "Renner bij Asfra Racing Team",
+              title: "Top trainer!",
+              text: "Arnaud is een top trainer en weet waar hij het over heeft. Ikzelf heb dankzij Arnaud heel veel progressie kunnen maken en heb het plezier teruggevonden in het wielrennen."
             },
           ]}
       />

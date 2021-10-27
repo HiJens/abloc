@@ -5,6 +5,14 @@
         padding: $spacing-unit;
         margin-bottom: $spacing-unit;
 
+        &-title {
+            margin-bottom: $spacing-unit / 3;
+        }
+
+        &-text {
+            margin-bottom: $spacing-unit;
+        }
+
         &-action {
             display: flex;
             justify-content: space-between;

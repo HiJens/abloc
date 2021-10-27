@@ -32,7 +32,7 @@ const Formules = ({ title, text, formules }) => {
                                 return (
                                     <div className="formules-item" key={index} data-aos="fade-down">
                                         <h3 className="formules-item-title">{formule.title}</h3>
-
+                                        <p className="formules-item-text">{formule.text}</p>
                                         <hr />
 
                                         <div className="formules-item-action">

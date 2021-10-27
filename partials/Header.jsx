@@ -1,4 +1,5 @@
 // Next.js
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,6 +13,8 @@ import { Button, NavLink } from "../components";
 import * as Routes from "../routes";
 
 const Header = () => {
+    const router = useRouter();
+
     // States
     const [ menu, setMenu ] = useState(false);
     const [ scrolled, setScrolled ] = useState(false);
@@ -43,6 +46,10 @@ const Header = () => {
         setMenu(!menu);
     };
 
+    const navigateMenu = (href) => {
+        showMenu();
+        router.push(href);
+    };
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -97,11 +104,9 @@ const Header = () => {
                     {
                         NavItems.map((item, index) => {
                             return (
-                                <NavLink
-                                    key={index}
-                                    title={item.title}
-                                    route={item.href}
-                                />
+                                <span key={index} onClick={() => navigateMenu(item.href)} className="link link--nav">
+                                    {item.title}
+                                </span>
                             )
                         })
                     }

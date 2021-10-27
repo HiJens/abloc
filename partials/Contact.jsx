@@ -16,12 +16,12 @@ const Contact = ({ title, socials }) => {
 
                         <div className="contact-data" data-aos="fade-right" data-aos-delay={100}>
                             <span>Bel mij op via</span>
-                            <a href="tel:0477274789">0477 27 36 97</a>
+                            <a href="tel:+32474014955">+32474014955</a>
                         </div>
 
                         <div className="contact-data" data-aos="fade-right" data-aos-delay={200}>
                             <span>Of mail mij via</span>
-                            <a href="mailto:test@gmail.com">info@gmail.com</a>
+                            <a href="mailto:ad24coaching@gmail ">ad24coaching@gmail</a>
                         </div>
 
                         {

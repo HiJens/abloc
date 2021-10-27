@@ -12,7 +12,7 @@ const Footer = ({ name }) => {
                     <div className="footer-copyright">
                         © {name}, {new Date().getFullYear()}
                     </div>
-
+{/* 
                     <div className="footer-links">
                         <Link href="/privacy-policy">
                             <a>Privacy policy</a>
@@ -25,7 +25,7 @@ const Footer = ({ name }) => {
                         <Link href="/disclaimer">
                             <a>Disclaimer</a>
                         </Link>
-                    </div>
+                    </div> */}
 
                     <div className="footer-creator">
                         Produced by
