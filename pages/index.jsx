@@ -16,7 +16,7 @@ const Home = () => {
       <Hero 
         isMain={true}
         title="Find the <span>perfect balance</span> between your body and well-being"
-        text='“Een gezonde geest in een gezond lichaam”  is waarschijnlijk een gezegde die je al veel gehoord hebt, maar er wordt vaak geen belang aan gehecht. Bij A’bloc is dit een van de kernwaardes, wat mij onderscheid van de rest.'
+        text='“Een gezonde geest in een gezond lichaam”  is waarschijnlijk een gezegde die je al veel gehoord hebt, maar er wordt vaak geen belang aan gehecht. Bij A’bloc is dit een van de kernwaardes, wat mij onderscheidt van de rest.'
         buttons={[
           {
             title: "Neem contact op",
@@ -91,7 +91,7 @@ const Home = () => {
 
       <Formules
         title="<span>The formules</span> explained"
-        text="Lukt het jou niet om gestructureerd jouw trainingen in te plannen of weet je gewoon weg niet waar te beginnen, dan help ik jou graag verder met het halen van jou doel."
+        text="Lukt het jou niet om gestructureerd jouw trainingen in te plannen of weet je gewoon weg niet waar te beginnen, dan help ik jou graag verder met het halen van jouw doel."
         formules={[
           {
             title: "Voor beginner",
